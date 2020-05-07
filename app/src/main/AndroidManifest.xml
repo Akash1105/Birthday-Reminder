@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rishi.family">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.rishi.family.views.activities.GiftRecomendation" />
+        <activity android:name="com.rishi.family.views.activities.FamilyTree" />
+        <activity
+            android:name="com.rishi.family.views.activities.BirthdaysListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rishi.family.views.activities.AddBirthdayActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+
+        <receiver
+            android:name="com.rishi.family.receivers.AlarmReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.rishi.family.receivers.MyBroadcastReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.rishi.family.views.activities.sms.CreateSmsScheduleActivity" />
+        <activity android:name="com.rishi.family.views.activities.sms.SmsSchedulerActivity" />
+        <activity android:name=".views.activities.sms.SmsUpdateSchedulerActivity"/>
+        <activity
+            android:name="com.rishi.family.views.activities.NotificationsSettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.rishi.family.views.activities.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

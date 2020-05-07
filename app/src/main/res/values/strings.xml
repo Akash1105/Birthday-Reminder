@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Birthday Reminder</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--Kindly add birthdays note -->
+    <string name="add_birthdays_note">Kindly Add Birthdays</string>
+
+    <!--All birthdays title -->
+    <string name="all_birthdays_title">All Birthdays</string>
+
+    <!--Select dob-->
+    <string name="select_dob_text">Select date of birth</string>
+
+    <!--Actionbar title -->
+    <string name="actionbar_title">Birthday Reminder</string>
+
+    <!--Todaysv birthdays title -->
+    <string name="todays_birthdays_title">People having birthdays today</string>
+
+    <!--Notification note-->
+    <string name="notification_time_note">Note:- You can change the default Notification time and Notification day in the Notification settings</string>
+
+    <!-- Notification settings Notification days array-->
+    <string-array name="array_reminder_days">
+
+        <item>The same day</item>
+
+        <item>1 day before</item>
+
+        <item>2 days before</item>
+
+        <item>3 days before</item>
+
+        <item>4 days before</item>
+
+        <item>5 days before</item>
+
+        <item>6 days before</item>
+
+        <item>7 days before</item>
+
+
+    </string-array>
+</resources>

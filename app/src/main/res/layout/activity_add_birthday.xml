@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_birthday"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="com.aditya.birthdayreminder.com.rishi.family.views.activities.AddBirthdayActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <LinearLayout
+                android:id="@+id/linearlayout_imagebutton_backarrow"
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left">
+
+                <ImageButton
+                    android:id="@+id/imagebutton_backarrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_back_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_textview_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/linearlayout_imagebutton_backarrow"
+                android:gravity="center_vertical|left">
+
+                <com.rishi.family.customcomponents.customtextviews.MediumWhiteTextView
+                    android:id="@+id/textview_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Birthday" />
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:gravity="center_horizontal|top"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginBottom="16dp">
+
+                 <de.hdodenhof.circleimageview.CircleImageView
+                     android:id="@+id/imageview_entrypicture"
+                     android:layout_width="112dp"
+                     android:layout_height="112dp"
+                     android:layout_centerInParent="true"
+                     android:src="@drawable/ic_avatar" />
+
+                 <ImageButton
+                     android:id="@+id/imagebutton_editentrypicture"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_toRightOf="@+id/imageview_entrypicture"
+                     android:src="@drawable/ic_pencil"
+                     android:background="?attr/selectableItemBackgroundBorderless"/>
+
+             </RelativeLayout>
+ -->
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textinputlayout_entryname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="Enter Name"
+                android:textColorHint="@color/colorEditTextHint">
+
+                <com.rishi.family.customcomponents.customedittexts.MediumWhiteEditText
+                    android:id="@+id/edittext_entryname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <!--<android.support.v7.widget.AppCompatEditText
+                android:id="@+id/edittext_Birthday"
+                style="@style/EditTextTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_calender"
+                android:editable="false" />-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp">
+
+                <com.rishi.family.customcomponents.customtextviews.MediumWhiteTextView
+                    android:id="@+id/textview_dataofbirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/select_dob_text"/>
+
+                <ImageButton
+                    android:id="@+id/imagebutton_dateofbirth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_calender"
+                    android:tint="@color/colorWhite" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.rishi.family.customcomponents.custombuttons.SmallAccentColorButton
+                    android:id="@+id/button_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Save" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/address1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="left"
+                android:lines="4"
+                android:maxLines="4"
+                android:text="@string/notification_time_note">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#323d4e</color>
+    <color name="colorPrimaryDark">#28313e</color>
+    <!--<color name="colorAccent">#E64A19</color>-->
+    <color name="colorAccent">#ffc005</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorMainLayoutBackground">#eff2f5</color>
+    <color name="colorEditTextHint">#8c8c8c</color>
+    <color name="colorGrey">#404040</color>
+    <color name="colorListDivider">#bfbfbf</color>
+    <color name="colorBirthdaysCircularIconBackground">#49a0ae</color>
+    <color name="colorText">#dddddd</color>
+    <color name="colorHint">#959595</color>
+    <color name="colorButtonTransparent">#be050505</color>
+
+
+</resources>
