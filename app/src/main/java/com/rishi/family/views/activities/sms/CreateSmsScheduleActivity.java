@@ -256,4 +256,13 @@ public class CreateSmsScheduleActivity extends AppCompatActivity implements Date
         }
 
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
+    public void onClick(View view) {
+        onBackPressed();
+    }
 }

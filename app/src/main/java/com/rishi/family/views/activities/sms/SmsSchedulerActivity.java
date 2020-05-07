@@ -91,6 +91,7 @@ public class SmsSchedulerActivity extends AppCompatActivity {
         position = ((AdapterView.AdapterContextMenuInfo) menuInfo).position;
         MenuInflater inflater = getMenuInflater();
         menu.setHeaderTitle("Select an Action");
+
         inflater.inflate(R.menu.context_menu, menu);
     }
 

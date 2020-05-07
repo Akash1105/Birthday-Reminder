@@ -68,7 +68,7 @@ public class SmsUpdateSchedulerActivity extends AppCompatActivity implements Dat
         editTextMessage = findViewById(R.id.editTextMessage);
         editTextToRecipient = findViewById(R.id.editTextToRecipient);
         sms = (Sms) getIntent().getSerializableExtra("sms");
-        Toast.makeText(this, sms.getNumber(), Toast.LENGTH_LONG).show();
+
         radioGroup.setOnCheckedChangeListener(this);
         radioGroup2.setOnCheckedChangeListener(this);
         calendar.setTimeInMillis(sms.getMilli());
@@ -269,5 +269,14 @@ public class SmsUpdateSchedulerActivity extends AppCompatActivity implements Dat
         }
 
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
+    public void onClick(View view) {
+        onBackPressed();
     }
 }

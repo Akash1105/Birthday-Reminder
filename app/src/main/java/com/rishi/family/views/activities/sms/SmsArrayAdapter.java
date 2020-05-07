@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.rishi.family.R;
@@ -61,6 +62,7 @@ public class SmsArrayAdapter extends BaseAdapter {
             holder.textViewTime = convertView.findViewById(R.id.textViewTime);
             holder.textViewMessage = convertView.findViewById(R.id.textViewMessage);
             holder.textViewDate = convertView.findViewById(R.id.textViewDate);
+            holder.mTextViewCircularIcon = convertView.findViewById(R.id.textview_circular_picture);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
@@ -69,7 +71,7 @@ public class SmsArrayAdapter extends BaseAdapter {
         holder.textViewMessage.setText(smsArrayList.get(position).getMessage());
         holder.textViewTime.setText(smsArrayList.get(position).getTime());
         holder.textViewDate.setText(smsArrayList.get(position).getDate());
-
+        holder.mTextViewCircularIcon.setText("M");
         return convertView;
     }
 
@@ -78,5 +80,6 @@ public class SmsArrayAdapter extends BaseAdapter {
         TextView textViewTime;
         TextView textViewMessage;
         TextView textViewDate;
+        TextView mTextViewCircularIcon;
     }
 }
