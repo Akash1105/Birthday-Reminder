@@ -200,7 +200,7 @@ public class AlarmReceiver extends BroadcastReceiver {
 
         String channelId = "some_channel_id";
         CharSequence channelName = "Some Channel";
-        int importance = NotificationManager.IMPORTANCE_LOW;
+        int importance = NotificationManager.IMPORTANCE_HIGH;
         NotificationChannel notificationChannel = new NotificationChannel(channelId, channelName, importance);
         notificationChannel.enableLights(true);
         notificationChannel.setLightColor(Color.RED);
@@ -236,6 +236,8 @@ public class AlarmReceiver extends BroadcastReceiver {
                 .build();
 
         notificationManager.notify(notifyId, notification);
+        Toast.makeText(mContext, "notification created for birthday", Toast.LENGTH_SHORT).show();
+
     }
 
 

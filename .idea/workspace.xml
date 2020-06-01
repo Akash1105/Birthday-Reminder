@@ -11,42 +11,72 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3bb8d78-4147-45bb-9512-ea4614f6ff19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/drawable_orange.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/androidTest/java/com/manjurulhoque/scheduler/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/java/com/manjurulhoque/scheduler/MyBroadcastReceiver.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/java/com/manjurulhoque/scheduler/activity/AutoSmsScheduler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/java/com/manjurulhoque/scheduler/activity/sms/CreateSmsScheduleActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/java/com/manjurulhoque/scheduler/activity/sms/SmsSchedulerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/java/com/manjurulhoque/scheduler/activity/sms/SmsUpdateSchedulerActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/java/com/manjurulhoque/scheduler/adapter/SmsArrayAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/java/com/manjurulhoque/scheduler/dbhelper/SmsDatabaseHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/java/com/manjurulhoque/scheduler/helper/SwipeHelper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/java/com/manjurulhoque/scheduler/model/Sms.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/java/com/manjurulhoque/scheduler/util/DisplayUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/drawable-hdpi/ic_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/drawable-hdpi/ic_sms.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/drawable-mdpi/ic_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/drawable-mdpi/ic_sms.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/drawable-xhdpi/ic_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/drawable-xhdpi/ic_sms.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/drawable-xxhdpi/ic_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/drawable-xxhdpi/ic_sms.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/drawable/bg.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/layout/activity_auto_sms_scheduler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/layout/activity_create_sms_schedule.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/layout/activity_sms_scheduler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/layout/activity_sms_update_scheduler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/layout/layout_row_sms.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/menu/context_menu.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/app/src/test/java/com/manjurulhoque/scheduler/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/screenshots/one.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/screenshots/three.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/screenshots/two.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android-scheduler-master/settings.gradle" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rishi/family/views/activities/sms/CreateSmsScheduleActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rishi/family/views/activities/sms/CreateSmsScheduleActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rishi/family/views/activities/sms/SmsArrayAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rishi/family/views/activities/sms/SmsArrayAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rishi/family/views/activities/sms/SmsUpdateSchedulerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/rishi/family/views/activities/sms/SmsUpdateSchedulerActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_sms_schedule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_create_sms_schedule.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/birthdayslist_recyclerview_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/birthdayslist_recyclerview_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_row_sms.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_row_sms.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/todays_birthdayslist_recyclerview_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/todays_birthdayslist_recyclerview_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +84,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_6P_API_24" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="b30ea9c2" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
