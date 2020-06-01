@@ -43,7 +43,7 @@ public class CreateSmsScheduleActivity extends AppCompatActivity implements Date
     RelativeLayout relativeLayoutSelectDate;
     Calendar calendar;
     EditText editTextMessage;
-    String message;
+    String message, message11;
     EditText editTextToRecipient;
     int mHour, mMinute, mYear, mMonth, mDay;
     SmsDatabaseHelper databaseHelper;
@@ -89,16 +89,22 @@ public class CreateSmsScheduleActivity extends AppCompatActivity implements Date
     }
 
     private void setSmsSchedule() {
-        String message1 = editTextMessage.getText().toString();
-        if (message1 == "") {
-            message1 = message;
-            Toast.makeText(getApplicationContext(),message1+ "in",Toast.LENGTH_SHORT).show();
+        if (radioGroup.getCheckedRadioButtonId() == R.id.radioButton2) {
+            message11 = editTextMessage.getText().toString();
+
+        } else {
+            message11 = message;
         }
-        Toast.makeText(getApplicationContext(),message1 + "out",Toast.LENGTH_SHORT).show();
+        if (message11 == "") {
+            message11 = message;
+            //  Toast.makeText(getApplicationContext(), message11 + "in", Toast.LENGTH_SHORT).show();
+        }
+
+//        Toast.makeText(getApplicationContext(), message11 + "out", Toast.LENGTH_SHORT).show();
         String contactNumber = editTextToRecipient.getText().toString();
         Bundle bundle = new Bundle();
         bundle.putString("number", contactNumber);
-        bundle.putString("message", message1);
+        bundle.putString("message", message11);
 
         Intent intent = new Intent(this, MyBroadcastReceiver.class);
         intent.putExtras(bundle);
@@ -112,9 +118,9 @@ public class CreateSmsScheduleActivity extends AppCompatActivity implements Date
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, _id, intent, 0);
         AlarmManager alarmManager = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
         alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
-        Toast.makeText(this, "Scheduled", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "Scheduled", Toast.LENGTH_SHORT).show();
 
-        if (databaseHelper.addSms(_id, contactNumber, message1, textViewTime.getText().toString(),
+        if (databaseHelper.addSms(_id, contactNumber, message11, textViewTime.getText().toString(),
                 textViewDate.getText().toString(), (int) calendar.getTimeInMillis())) {
             Toast.makeText(this, "added to db", Toast.LENGTH_SHORT).show();
             finish();
@@ -222,7 +228,7 @@ public class CreateSmsScheduleActivity extends AppCompatActivity implements Date
             requestPermissions(new String[]{Manifest.permission.SEND_SMS}, PERMISSIONS_REQUEST_SEND_SMS);
 
             //After this point you wait for callback in onRequestPermissionsResult(int, String[], int[]) overriden method
-        } else if (editTextToRecipient.getText().toString().length()==0 || textViewDate.getText().toString().length()==0 || textViewTime.getText().toString().length()==0) {
+        } else if (editTextToRecipient.getText().toString().length() == 0 || textViewDate.getText().toString().length() == 0 || textViewTime.getText().toString().length() == 0) {
             Toast.makeText(getApplicationContext(), "Kindly Enter all the fields", Toast.LENGTH_SHORT).show();
         } else {
             setSmsSchedule();
@@ -232,12 +238,14 @@ public class CreateSmsScheduleActivity extends AppCompatActivity implements Date
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
         if (radioButton1.isChecked()) {
+            editTextMessage.setText("");
             radioGroup2.setVisibility(View.VISIBLE);
             editTextMessage.setVisibility(View.GONE);
             if (radioGroup2.getCheckedRadioButtonId() == -1) {
                 Toast.makeText(getApplicationContext(), "Please select Template", Toast.LENGTH_SHORT).show();
 
             } else {
+
                 if (message1.isChecked()) {
                     message = message1.getText().toString();
                 } else if (message2.isChecked()) {
@@ -251,6 +259,9 @@ public class CreateSmsScheduleActivity extends AppCompatActivity implements Date
 
             }
         } else if (radioButton2.isChecked()) {
+            if (radioGroup2.getCheckedRadioButtonId() != -1) {
+                radioGroup2.clearCheck();
+            }
             radioGroup2.setVisibility(View.GONE);
             editTextMessage.setVisibility(View.VISIBLE);
         }

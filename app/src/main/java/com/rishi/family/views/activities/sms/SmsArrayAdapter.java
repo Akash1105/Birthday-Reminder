@@ -11,6 +11,8 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
+
 import com.rishi.family.R;
 import com.rishi.family.dbhelper.SmsDatabaseHelper;
 import com.rishi.family.model.Sms;
@@ -53,7 +55,7 @@ public class SmsArrayAdapter extends BaseAdapter {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         final ViewHolder holder;
-
+try{
         if (convertView == null) {
             convertView = layoutInflater.inflate(R.layout.layout_row_sms, null);
             holder = new ViewHolder();
@@ -72,7 +74,9 @@ public class SmsArrayAdapter extends BaseAdapter {
         holder.textViewTime.setText(smsArrayList.get(position).getTime());
         holder.textViewDate.setText(smsArrayList.get(position).getDate());
         holder.mTextViewCircularIcon.setText("M");
-        return convertView;
+    }catch (Exception e){
+
+}       return convertView;
     }
 
     class ViewHolder {

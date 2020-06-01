@@ -245,12 +245,14 @@ public class SmsUpdateSchedulerActivity extends AppCompatActivity implements Dat
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
         if (radioButton1.isChecked()) {
+            editTextMessage.setText("");
             radioGroup2.setVisibility(View.VISIBLE);
             editTextMessage.setVisibility(View.GONE);
             if (radioGroup2.getCheckedRadioButtonId() == -1) {
                 Toast.makeText(getApplicationContext(), "Please select Template", Toast.LENGTH_SHORT).show();
 
             } else {
+
                 if (message1.isChecked()) {
                     message = message1.getText().toString();
                 } else if (message2.isChecked()) {
@@ -264,10 +266,12 @@ public class SmsUpdateSchedulerActivity extends AppCompatActivity implements Dat
 
             }
         } else if (radioButton2.isChecked()) {
+            if(radioGroup2.getCheckedRadioButtonId() != -1){
+                radioGroup2.clearCheck();
+            }
             radioGroup2.setVisibility(View.GONE);
             editTextMessage.setVisibility(View.VISIBLE);
         }
-
 
     }
 

@@ -35,7 +35,7 @@
                 android:layout_height="48dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginBottom="10dp"
-                android:background="@drawable/drawable_circle"
+                android:background="@drawable/drawable_orange"
                 android:gravity="center" />
 
             <com.rishi.family.customcomponents.customtextviews.SmallRWhiteTextView

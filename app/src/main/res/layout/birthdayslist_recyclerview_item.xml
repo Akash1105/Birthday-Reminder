@@ -33,7 +33,7 @@
                     android:id="@+id/textview_circular_picture"
                     android:layout_width="48dp"
                     android:layout_height="48dp"
-                    android:background="@drawable/drawable_circle"
+                    android:background="@drawable/drawable_orange"
                     android:gravity="center" />
 
 
